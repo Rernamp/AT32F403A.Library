@@ -1,0 +1,84 @@
+target_include_directories(AT32F403A.Library
+INTERFACE
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/core_support
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/device_support
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc
+)
+
+target_sources(AT32F403A.Library
+INTERFACE
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_acc.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_adc.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_bpr.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_can.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_crc.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_crm.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_dac.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_debug.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_def.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_dma.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_emac.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_exint.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_flash.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_gpio.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_i2c.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_misc.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_pwc.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_rtc.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_sdio.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_spi.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_tmr.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_usart.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_usb.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_wdt.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_wwdt.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/inc/at32f403a_407_xmc.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_acc.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_adc.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_bpr.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_can.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_crc.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_crm.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_dac.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_debug.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_dma.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_emac.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_exint.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_flash.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_gpio.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_i2c.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_misc.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_pwc.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_rtc.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_sdio.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_spi.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_tmr.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_usart.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_usb.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_wdt.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_wwdt.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/drivers/src/at32f403a_407_xmc.c
+
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/core_support/arm_common_tables.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/core_support/arm_const_structs.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/core_support/arm_helium_utils.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/core_support/arm_math.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/core_support/arm_mve_tables.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/core_support/arm_vec_math.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/core_support/cmsis_armcc.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/core_support/cmsis_armclang.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/core_support/cmsis_armclang_ltm.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/core_support/cmsis_compiler.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/core_support/cmsis_gcc.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/core_support/cmsis_iccarm.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/core_support/cmsis_version.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/core_support/core_cm4.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/core_support/mpu_armv7.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/core_support/mpu_armv8.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/core_support/pmu_armv8.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/device_support/at32f403a_407.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/device_support/at32f403a_407_conf_template.h
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/device_support/system_at32f403a_407.c
+    ${CMAKE_CURRENT_LIST_DIR}/AT32F403A.Library/libraries/cmsis/cm4/device_support/system_at32f403a_407.h
+
+)

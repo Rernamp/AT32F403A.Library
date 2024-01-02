@@ -1,0 +1,3 @@
+[submodule "Src/AT32F403A.Library"]
+	path = Src/AT32F403A.Library
+	url = https://github.com/ArteryTek/AT32F403A_407_Firmware_Library.git
